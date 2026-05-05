@@ -8,7 +8,7 @@ ILES is a full-stack web application for managing internship placements, weekly 
 - **Backend API:** https://iles-project.onrender.com
 
 
-## Repository
+## Repository.
 
 https://github.com/pleasurenayebare-tech/ILES-PROJECT
 
@@ -24,11 +24,11 @@ https://github.com/pleasurenayebare-tech/ILES-PROJECT
 - `backend/` — Django REST API
 - `web/` — React frontend
 
-## Getting Started
+## Getting Started.
 
 Visit https://iles-frontend.onrender.com and register an account to get started.
 
-## User Roles
+## User Roles.
 
 - **Admin** — Full system access and user management
 - **Student** — Submit and manage weekly internship logs
