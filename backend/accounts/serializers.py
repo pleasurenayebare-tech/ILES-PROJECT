@@ -36,9 +36,9 @@ class RegisterSerializer(serializers.ModelSerializer):
         return value
 
     def validate(self, attrs):
-        for field in ("staff_number", "student_number", "phone_number", "department"):
+        for field in ("staff_number", "student_number"):
             if attrs.get(field) == "":
-                attrs[field] = None if field in ("staff_number", "student_number") else ""
+                attrs[field] = None 
         return attrs
 
     def create(self, validated_data):
