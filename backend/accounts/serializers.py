@@ -22,7 +22,14 @@ class RegisterSerializer(serializers.ModelSerializer):
             "staff_number",
             "student_number",
             "phone_number",
-        )
+
+    def create(self, validated_data):
+        password = validated_data.pop("password")
+        user = User(**validated_data)
+        user.set_password(password)
+        user.role = UserRole.STUDENT  # always forced, never trusted from input
+        user.save()
+        return user
 
     def validate_password(self, value):
         validate_password(value)
