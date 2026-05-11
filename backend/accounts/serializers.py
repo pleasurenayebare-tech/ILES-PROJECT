@@ -36,8 +36,6 @@ class RegisterSerializer(serializers.ModelSerializer):
         return value
 
     def validate(self, attrs):
-        # Optional unique fields should be stored as NULL, not empty strings,
-        # so users can register without providing these values.
         for field in ("staff_number", "student_number", "phone_number", "department"):
             if attrs.get(field) == "":
                 attrs[field] = None if field in ("staff_number", "student_number") else ""
