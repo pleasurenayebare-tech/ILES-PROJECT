@@ -11,7 +11,7 @@ class UserRole(models.TextChoices):
 
 class CustomUser(AbstractUser):
     role = models.CharField(max_length=32, choices=UserRole.choices, default=UserRole.STUDENT)
-    department = models.CharField(max_length=150, blank=True)
+    department = models.CharField(max_length=150, blank=True, null=True)
     staff_number = models.CharField(max_length=50, blank=True, null=True, unique=True)
     student_number = models.CharField(max_length=50, blank=True, null=True, unique=True)
     phone_number = models.CharField(max_length=20, blank=True)
