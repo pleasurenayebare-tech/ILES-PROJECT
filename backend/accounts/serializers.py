@@ -1,66 +1,20 @@
-from django.contrib.auth import get_user_model
-from django.contrib.auth.password_validation import validate_password
-from rest_framework import serializers
-
-User = get_user_model()
-
+def validate(self, attrs):
+    role = attrs.get("role")
+    if role == "Student" and not attrs.get("student_number"):
+        raise serializers.ValidationError({"student_number": "Required for students."})
+    if role in ("WorkplaceSupervisor", "AcademicSupervisor") and not attrs.get("staff_number"):
+        raise serializers.ValidationError({"staff_number": "Required for supervisors."})
+    # your existing empty string logic...
+    return attrs
 
 class RegisterSerializer(serializers.ModelSerializer):
     password = serializers.CharField(write_only=True)
 
     class Meta:
         model = User
-        fields = (
-            "id",
-            "username",
-            "first_name",
-            "last_name",
-            "email",
-            "password",
-            "role",
-            "department",
-            "staff_number",
-            "student_number",
-            "phone_number",
-
-    def create(self, validated_data):
-        password = validated_data.pop("password")
-        user = User(**validated_data)
-        user.set_password(password)
-        user.role = UserRole.STUDENT  
-        user.save()
-        return user
+        fields = (...)
 
     def validate_password(self, value):
         validate_password(value)
-        return value
-
-    def validate(self, attrs):
-        for field in ("staff_number", "student_number"):
-            if attrs.get(field) == "":
-                attrs[field] = None 
-        return attrs
-
-    def create(self, validated_data):
-        password = validated_data.pop("password")
-        user = User(**validated_data)
-        user.set_password(password)
-        user.save()
-        return user
-
-
-class UserSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = User
-        fields = (
-            "id",
-            "username",
-            "first_name",
-            "last_name",
-            "email",
-            "role",
-            "department",
-            "staff_number",
-            "student_number",
-            "phone_number",
-        )
+        return 
+        
