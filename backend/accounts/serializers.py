@@ -16,7 +16,7 @@ class RegisterSerializer(serializers.ModelSerializer):
 
     def validate_password(self, value):
         validate_password(value)
-        return 
+        return value
         
     def validate_email(self, value):
         if User.objects.filter(email=value).exists():
