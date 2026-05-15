@@ -4,7 +4,6 @@ def validate(self, attrs):
         raise serializers.ValidationError({"student_number": "Required for students."})
     if role in ("WorkplaceSupervisor", "AcademicSupervisor") and not attrs.get("staff_number"):
         raise serializers.ValidationError({"staff_number": "Required for supervisors."})
-    # your existing empty string logic...
     return attrs
 
 class RegisterSerializer(serializers.ModelSerializer):
