@@ -12,6 +12,7 @@ class RegisterSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
         fields = (...)
+        read_only_fields = ("id", "role")
 
     def validate_password(self, value):
         validate_password(value)
