@@ -9,6 +9,7 @@ class Notification(models.Model):
         ("in_app","In_app"),
         ("email","Email"),
         ("sms","SMS"),
+
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name="notifications")
     title = models.CharField(max_length=160)
     message = models.TextField()
