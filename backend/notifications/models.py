@@ -8,7 +8,7 @@ class Notification(models.Model):
     CHANNEL_CHOICES = [ 
         ("in_app","In_app"),
         ("email","Email"),
-        ("sms" , "sms"),
+        ("sms","sms"),
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name="notifications")
     title = models.CharField(max_length=160)
     message = models.TextField()
