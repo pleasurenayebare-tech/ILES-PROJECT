@@ -18,4 +18,5 @@ class NotificationViewSet(viewsets.ReadOnlyModelViewSet):
     def mark_read(self,request,pk=None):    
         notification = self.get_object()
         notification.is_read=True
-        return Response(NotificationSerializer(notification).data)
+        notification.save(update_fields=["is_read"])
+        
