@@ -19,4 +19,5 @@ class NotificationViewSet(viewsets.ReadOnlyModelViewSet):
         notification = self.get_object()
         notification.is_read=True
         notification.save(update_fields=["is_read"])
+        return
         
