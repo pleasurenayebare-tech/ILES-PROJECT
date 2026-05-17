@@ -13,7 +13,7 @@ class NotificationViewSet(viewsets.ReadOnlyModelViewSet):
     def get_queryset(self):
         return Notification.objects.filter(user=self.request.user)
 
-    @action(detail=True, methods=["patch"])
+    @action(detail=True,
     def mark_read(self, request, pk=None):
         notification = self.get_object()
         notification.is_read = True
