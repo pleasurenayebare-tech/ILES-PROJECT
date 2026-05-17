@@ -13,7 +13,7 @@ class Notification(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name="notifications")
     title = models.CharField(max_length=160)
     message = models.TextField()
-    channel = models.CharField(max_length=20, default="in_app")
+    channel = models.CharField(max_length=20,choices = CHANNEL_CHOICESdefault="in_app")
     is_read = models.BooleanField(default=False)
     created_at = models.DateTimeField(auto_now_add=True)
 
