@@ -16,6 +16,7 @@ def main():
      python manage.py <command> [options]
    """
    
+#Set the default settings module for the Django project.
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'config.settings')
     try:
   #Import Django's CLI execution function 
