@@ -6,7 +6,8 @@ import sys
 
 def main():
     """Run administrative tasks."""
-   this is the entry point for Django management commands such as :
+   This is the entry point for Django management commands such as :
+    -runserver  : Start the development server. 
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'config.settings')
     try:
   #Import Django's CLI execution function 
