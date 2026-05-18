@@ -8,6 +8,7 @@ def main():
     """Run administrative tasks."""
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'config.settings')
     try:
+#Import Django's CLI execution function 
         from django.core.management import execute_from_command_line
     except ImportError as exc:
   #Raised when Django is not installed or the virtual environment is not activated. Make sure to run: pip install -r requirements.txt
