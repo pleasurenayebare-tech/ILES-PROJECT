@@ -7,7 +7,7 @@ import sys
 def main():
     """Run administrative tasks."""
    This is the entry point for Django management commands such as :
-    -runserver  : Start the development server. 
+    -runserver  : Start the development server
     -makemigrations/migrate : Handle database migrations
     -createsuperuser : Create an admin user
     -shell        : Open an interactive Python shell with Django loaded 
