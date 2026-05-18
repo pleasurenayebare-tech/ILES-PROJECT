@@ -18,5 +18,5 @@ def main():
     execute_from_command_line(sys.argv)
 
 if __name__ == '__main__':
-#Only runs when the script is executed directly.
+    #Only runs when the script is executed directly(not when imported)
     main()
