@@ -15,7 +15,7 @@ def main():
             "available on your PYTHONPATH environment variable? Did you "
             "forget to activate a virtual environment?"
         ) from exc
-#Pass command-line arguments to Django's management handler
+   #Pass command-line arguments to Django's management command handler
     execute_from_command_line(sys.argv)
 
 if __name__ == '__main__':
