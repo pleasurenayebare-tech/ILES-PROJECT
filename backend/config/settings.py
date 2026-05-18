@@ -66,7 +66,6 @@ TEMPLATES = [
 WSGI_APPLICATION = 'config.wsgi.application'
 
 
-# Database
 
 DATABASES = {
     "default": dj_database_url.parse(
