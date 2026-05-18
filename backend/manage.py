@@ -8,6 +8,7 @@ def main():
     """Run administrative tasks."""
    This is the entry point for Django management commands such as :
     -runserver  : Start the development server. 
+    -makemigrations/migrate : Handle database migrations
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'config.settings')
     try:
   #Import Django's CLI execution function 
