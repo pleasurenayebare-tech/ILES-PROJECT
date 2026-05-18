@@ -10,6 +10,7 @@ def main():
     -runserver  : Start the development server. 
     -makemigrations/migrate : Handle database migrations
     -createsuperuser : Create an admin user
+    -shell : Open an interactive Python shell with Django loaded 
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'config.settings')
     try:
   #Import Django's CLI execution function 
