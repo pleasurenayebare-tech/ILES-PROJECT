@@ -19,6 +19,7 @@ def main():
    #Set the default settings module for the Django project.
    #Change 'config.settings' if your settings module path differs.
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'config.settings')
+
     try:
   #Import Django's CLI execution function 
         from django.core.management import execute_from_command_line
