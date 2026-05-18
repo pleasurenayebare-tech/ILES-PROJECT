@@ -14,6 +14,7 @@ def main():
 
 Usage:
   python manage.py <command> [options]
+"""
    
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'config.settings')
     try:
