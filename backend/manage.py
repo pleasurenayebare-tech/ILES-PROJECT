@@ -10,7 +10,7 @@ def main():
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:
-#Raised when Django is not installed or the virtual environment is not activated. Make sure to run: pip install -r requirements.txt
+  #Raised when Django is not installed or the virtual environment is not activated. Make sure to run: pip install -r requirements.txt
         raise ImportError(
             "Couldn't import Django. Are you sure it's installed and "
             "available on your PYTHONPATH environment variable? Did you "
