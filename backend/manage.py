@@ -12,7 +12,9 @@ def main():
     -createsuperuser : Create an admin user
     -shell        : Open an interactive Python shell with Django loaded 
 
-Usage 
+Usage:
+  python manage.py <command> [options]
+   
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'config.settings')
     try:
   #Import Django's CLI execution function 
