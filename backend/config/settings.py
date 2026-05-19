@@ -101,7 +101,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = "en-us"  # Default language for the application
 
-TIME_ZONE = "Africa/Kampala"
+TIME_ZONE = "Africa/Kampala"  # Uganda timezone (UTC+3)
 
 USE_I18N = True
 
