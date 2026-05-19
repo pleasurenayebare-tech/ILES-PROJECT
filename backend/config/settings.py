@@ -105,7 +105,7 @@ TIME_ZONE = "Africa/Kampala"  # Uganda timezone (UTC+3)
 
 USE_I18N = True  # Enable Django's translation system
 
-USE_TZ = True
+USE_TZ = True  # Store datetime and timezone-aware in the database
 
 
 # Static files (CSS, JavaScript, Images)
