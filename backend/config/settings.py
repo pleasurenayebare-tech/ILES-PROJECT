@@ -113,7 +113,7 @@ USE_TZ = True  # Store datetime and timezone-aware in the database
 
 STATIC_URL = "/static/"  # URL prefix for static files
 STATIC_ROOT = BASE_DIR / "staticfiles"  # Folder where static files are collected for deployment
-STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"  # Serve static files via WhiteNoise
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 AUTH_USER_MODEL = "accounts.CustomUser"
