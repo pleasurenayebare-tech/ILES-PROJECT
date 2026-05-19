@@ -103,7 +103,7 @@ LANGUAGE_CODE = "en-us"  # Default language for the application
 
 TIME_ZONE = "Africa/Kampala"  # Uganda timezone (UTC+3)
 
-USE_I18N = True
+USE_I18N = True  # Enable Django's translation system
 
 USE_TZ = True
 
