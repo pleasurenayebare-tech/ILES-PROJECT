@@ -13,7 +13,7 @@ def validate(self, attrs):
     return attrs
 
 class RegisterSerializer(serializers.ModelSerializer):
-    Serialiser for handling new user registration.
+    """Serialiser for handling new user registration.
     password = serializers.CharField(write_only=True)
 
     class Meta:
