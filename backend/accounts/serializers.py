@@ -1,5 +1,5 @@
 def validate(self, attrs):
-    """Cross-field validation to enforce role-specifc required fields.
+    """Cross-field validation to enforce role-specifc required fields."""
     role = attrs.get("role")
     if role == "Student" and not attrs.get("student_number"):
         raise serializers.ValidationError({"student_number": "Required for students."})
