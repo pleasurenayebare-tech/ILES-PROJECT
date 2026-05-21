@@ -9,6 +9,7 @@ def validate(self, attrs):
     # Workplace and Academic Supervisors must provide a staff number
     if role in ("WorkplaceSupervisor", "AcademicSupervisor") and not attrs.get("staff_number"):
         raise serializers.ValidationError({"staff_number": "Required for supervisors."})
+        
     return attrs
 
 class RegisterSerializer(serializers.ModelSerializer):
