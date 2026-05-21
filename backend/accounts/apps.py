@@ -11,3 +11,4 @@ class AccountsConfig(AppConfig):
     name = "accounts"
     def ready(self):
         Called when the app is fully loaded.
+        pass
