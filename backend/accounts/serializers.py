@@ -24,6 +24,7 @@ class RegisterSerializer(serializers.ModelSerializer):
         read_only_fields = ("id", "role") # These fields are set by the system, not the user
 
     def validate_password(self, value):
+        """Validate password strength usind Django's built-in validators.
         validate_password(value)
         return value
         
