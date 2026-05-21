@@ -9,6 +9,7 @@ class AccountsConfig(AppConfig):
     
     # The name of the app as recognised by Django
     name = "accounts"
+    
     def ready(self):
         """Called when the app is fully loaded."""
         pass  # Reserved for future signal imports if needed
