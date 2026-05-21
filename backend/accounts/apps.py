@@ -9,3 +9,4 @@ class AccountsConfig(AppConfig):
     
     # The name of the app as recognised by Django
     name = "accounts"
+    def ready(self):
