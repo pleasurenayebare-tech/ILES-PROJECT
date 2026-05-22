@@ -10,7 +10,7 @@ def main():
     -runserver  : Start the development server
     -makemigrations/migrate : Handle database migrations
     -createsuperuser : Create an admin user
-    -shell        : Open an interactive Python shell with Django loaded 
+    -shell        : Open an interactive Python shell with Django loaded
 
    Usage:
      python manage.py <command> [options]
