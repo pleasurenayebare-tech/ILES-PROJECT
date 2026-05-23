@@ -25,5 +25,5 @@ class AccountsModelTest(TestCase):
         self.assertEqual(self.student.email, "student@test.com")
 
     def test_user_role_is_student(self):
-        """Test that user role is set to Student.
+        """Test that user role is set to Student."""
         
