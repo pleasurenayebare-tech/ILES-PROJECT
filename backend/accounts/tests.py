@@ -14,3 +14,6 @@ class AccountsModelTest(TestCase):
             email="student@test.com",
             password="Test1234!",
             role="Student"
+        )
+
+    
