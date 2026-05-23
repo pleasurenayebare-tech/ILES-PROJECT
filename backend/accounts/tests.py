@@ -21,3 +21,5 @@ class AccountsModelTest(TestCase):
         self.assertEqual(self.student.username, "teststudent")
 
     def test_user_email(self):
+        """Test that the user email is saved correctly.
+        
