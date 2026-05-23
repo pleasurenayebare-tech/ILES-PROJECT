@@ -17,5 +17,5 @@ class AccountsModelTest(TestCase):
         )
 
     def test_user_created_successfully(self):
-        """Test that a user is created with the correct username.
+        """Test that a user is created with the correct username."""
     
