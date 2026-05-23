@@ -33,6 +33,6 @@ class AccountsModelTest(TestCase):
         self.assertTrue(self.student.is_active)
 
     def test_user_is_not_staff_by_default(self):
-        """Test that a newly created user is not a staff member.
+        """Test that a newly created user is not a staff member."""
         
         
