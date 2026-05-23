@@ -7,4 +7,4 @@ User = get_user_model()
 class AccountsModelTest(TestCase):
     """Test cases for the Accounts app models."""
     def setUp(self):
-        """Set up test data before each test runs.
+        """Set up test data before each test runs."""
