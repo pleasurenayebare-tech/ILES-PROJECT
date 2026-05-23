@@ -16,4 +16,5 @@ class AccountsModelTest(TestCase):
             role="Student"
         )
 
+    def test_user_created_successfully(self):
     
