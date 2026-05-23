@@ -9,3 +9,4 @@ class AccountsModelTest(TestCase):
     
     def setUp(self):
         """Set up test data before each test runs."""
+        self.student = User.objects.create_user(
