@@ -20,3 +20,4 @@ permission_classes=[permissions.IsAuthenticated]
       def get_object(self):
           return self.request.user
 class ChangePasswordView(APIView):
+permission_classes=[permissions.IsAuthenticated]
