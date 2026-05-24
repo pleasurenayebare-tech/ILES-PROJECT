@@ -35,3 +35,4 @@ class ChangePasswordView(APIView):
              )
 user.set_password(newpassword)
 user.save()
+update_session_auth_hash(request,user)
