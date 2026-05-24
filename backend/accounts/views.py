@@ -24,4 +24,4 @@ class ChangePasswordView(APIView):
       def post(self,request):
           user = request.user
           old_password = request.data.get("old_password")
-new_password = request.data.get("new_password")
+          new_password = request.data.get("new_password")
