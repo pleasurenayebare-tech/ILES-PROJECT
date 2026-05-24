@@ -25,3 +25,4 @@ class ChangePasswordView(APIView):
           user = request.user
           old_password = request.data.get("old_password")
           new_password = request.data.get("new_password")
+if not old_password or not new_password
