@@ -8,3 +8,4 @@ from .permissions import IsAdminRole
 User=get_user_model
 class Registerview(generics.CreateAPIView):
 querryset=User.objects.all()
+serializer_class=RegisterSerializer 
