@@ -15,3 +15,4 @@ class CurrentUserView(APIView):
       def get_object(self):
           return self.request.user
 class UpdateProfileView(generics.UpdateAPIView):
+serializer_class=UserSerializer 
