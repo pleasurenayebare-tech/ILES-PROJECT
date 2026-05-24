@@ -7,7 +7,7 @@ from .serializers import RegisterSerializer , UserSerializer
 from .permissions import IsAdminRole
 User=get_user_model
 class Registerview(generics.CreateAPIView):
-querryset=User.objects.all()
+      querryset=User.objects.all()
 serializer_class = RegisterSerializer 
 permission_class = [permissions.AllowAny]
 class CurrentUserView(APIView):
