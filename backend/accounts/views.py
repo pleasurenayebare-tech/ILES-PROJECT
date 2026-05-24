@@ -16,3 +16,4 @@ class CurrentUserView(APIView):
           return self.request.user
 class UpdateProfileView(generics.UpdateAPIView):
       serializer_class = UserSerializer 
+permission_classes=[permissions.IsAuthenticated]
