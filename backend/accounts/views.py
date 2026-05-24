@@ -12,3 +12,4 @@ class Registerview(generics.CreateAPIView):
       permission_class = [permissions.AllowAny]
 class CurrentUserView(APIView):
       permission_classes =    [permissions.IsAunthenticated]
+def get_object(self)
