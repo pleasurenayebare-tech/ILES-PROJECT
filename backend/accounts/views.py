@@ -29,4 +29,4 @@ class ChangePasswordView(APIView):
              return Response(
                   {"error": "Both old and new password are required."}, status=status.HTTP_400_BAD_REQUEST
 )
-if not user.check_password(old_password):
+          if not user.check_password(old_password):
