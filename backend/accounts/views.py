@@ -21,5 +21,5 @@ class UpdateProfileView(generics.UpdateAPIView):
           return self.request.user
 class ChangePasswordView(APIView):
       permission_classes = [permissions.IsAuthenticated]
-def post(self,request):
+      def post(self,request):
 user = request.user
