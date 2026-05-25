@@ -53,6 +53,6 @@ class LogoutView(APIView):
             refresh_token = request.data.get("refresh")
             if not refresh_token:
                 return Response(
-                    {"error":"Refresh token is required."}
+                    {"error":"Refresh token is required."},
 status=status.HTTP 400 BAD_REQUEST
 
