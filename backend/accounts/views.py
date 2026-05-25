@@ -40,6 +40,6 @@ class ChangePasswordView(APIView):
 class UserListView(generics.ListAPIView):
     serializer_class = UserSerializer
     permission_classes = [IsAdminRole]
-def get_queryset(self)
+def get_queryset(self):
 class LogoutView(APIView):
     permission _classes = [permissions.IsAuthenticated]
