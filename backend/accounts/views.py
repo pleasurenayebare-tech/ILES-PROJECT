@@ -39,3 +39,4 @@ class ChangePasswordView(APIView):
           return Response ({"message":"Password updated successfully.}) 
 class UserListView(generics.ListAPIView):
     serializer_class = UserSerializer
+permission_classes=[IsAdminRole]
