@@ -51,4 +51,5 @@ class LogoutView(APIView):
     def post(self, request):
         try:
             refresh_token = request.data.get("refresh")
+if not refresh_token
 
