@@ -43,6 +43,6 @@ class UserListView(generics.ListAPIView):
     def get_queryset(self):
         role = self.request.query_params.ger("role"
 )
-if role:
+        if role:
 class LogoutView(APIView):
     permission _classes = [permissions.IsAuthenticated]
