@@ -61,3 +61,4 @@ class LogoutView(APIView):
             return Response({"message":"Logged out successfully."})
 except Exception:
     return Response(
+{"error":"Invalid or expired token."}
