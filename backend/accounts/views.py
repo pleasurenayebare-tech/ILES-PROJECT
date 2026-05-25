@@ -37,3 +37,4 @@ class ChangePasswordView(APIView):
           user.save()
     update_session_auth_hash(request,user)
           return Response ({"message":"Password updated successfully.}) 
+class UserListView(generics.ListAPIView):
