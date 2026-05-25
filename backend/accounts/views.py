@@ -57,5 +57,5 @@ class LogoutView(APIView):
                     status=status.HTTP 400 BAD_REQUEST
                 )
             token = RefreshToken(refresh_token)
-token.blacklist()
+            token.blacklist()
 
