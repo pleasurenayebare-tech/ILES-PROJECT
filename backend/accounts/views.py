@@ -48,5 +48,5 @@ class UserListView(generics.ListAPIView):
         return User.objects.all()
 class LogoutView(APIView):
     permission _classes = [permissions.IsAuthenticated]
-def post(self,request):
+    def post(self,request):
 
