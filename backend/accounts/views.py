@@ -56,4 +56,5 @@ class LogoutView(APIView):
                     {"error":"Refresh token is required."},
                     status=status.HTTP 400 BAD_REQUEST
                 )
+token=RefreshToken(refresh_token)
 
