@@ -14,6 +14,7 @@ class CurrentUserView(APIView):
       permission_classes =    [permissions.IsAunthenticated]
       def get(self, request):
           serializers = Userserializer(request.user)
+return Response (serializer.data)
           
 class UpdateProfileView(generics.UpdateAPIView):
       serializer_class = UserSerializer 
