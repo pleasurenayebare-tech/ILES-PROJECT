@@ -38,4 +38,4 @@ class ChangePasswordView(APIView):
     update_session_auth_hash(request,user)
           return Response ({"message":"Password updated successfully.}) 
 class UserListView(generics.ListAPIView):
-    serializer_class =UserSerializer
+    serializer_class = UserSerializer
