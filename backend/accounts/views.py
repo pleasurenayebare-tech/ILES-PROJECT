@@ -41,5 +41,6 @@ class UserListView(generics.ListAPIView):
     serializer_class = UserSerializer
     permission_classes = [IsAdminRole]
     def get_queryset(self):
+role=self.request.query_params.ger("role")
 class LogoutView(APIView):
     permission _classes = [permissions.IsAuthenticated]
