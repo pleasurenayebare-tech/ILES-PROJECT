@@ -45,5 +45,6 @@ class UserListView(generics.ListAPIView):
 )
         if role:
             return User.objects.filter(role=role)
+return User.objects.all()
 class LogoutView(APIView):
     permission _classes = [permissions.IsAuthenticated]
