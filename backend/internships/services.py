@@ -7,7 +7,7 @@ def notify_user(user, title, message):
     """
     Send a notification to a user via two channels:
     1. In-app notification stored in the database.
-    2. Email notification (if the user has an email address)
+    2. Email notification (if the user has an email address).
     Notification.objects.create(user=user, title=title, message=message, channel="in_app")
     if user.email:
         send_mail(
