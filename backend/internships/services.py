@@ -29,3 +29,4 @@ def notify_user(user, title, message):
         )
 
 def notify_users(users, title, message):
+    """
