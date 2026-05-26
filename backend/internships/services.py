@@ -13,7 +13,8 @@ def notify_user(user, title, message):
     # Create an in-app notification record in the database
     Notification.objects.create(
         user=user, 
-        title=title, message=message, channel="in_app")
+        title=title, 
+        message=message, channel="in_app")
     if user.email:
         send_mail(
             subject=title,
