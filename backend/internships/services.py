@@ -34,3 +34,4 @@ def notify_users(users, title, message):
     Loops through a list or queryset of users and calls notify_user for each.
     """
     for user in users:
+        notify_user(user, title, message)
