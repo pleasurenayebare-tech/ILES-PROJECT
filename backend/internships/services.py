@@ -6,6 +6,7 @@ from notifications.models import Notification
 def notify_user(user, title, message):
     """
     Send a notification to a user via two channels:
+    1. In-app notification stored in the database
     Notification.objects.create(user=user, title=title, message=message, channel="in_app")
     if user.email:
         send_mail(
