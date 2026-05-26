@@ -18,7 +18,7 @@ def notify_user(user, title, message):
         channel="in_app"
     )
 
-    
+    # Send an email notification if the user has a registered email
     if user.email:
         send_mail(
             subject=title,
