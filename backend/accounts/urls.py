@@ -4,7 +4,7 @@ from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 from .views import CurrentUserView, RegisterView
 
 # URL patterns for the accounts app
-
+# All routes are prefixed with /api/auth/ from the main urls.py
 urlpatterns = [
     path("register/", RegisterView.as_view(), name="register"),
     path("login/", TokenObtainPairView.as_view(), name="login"),
