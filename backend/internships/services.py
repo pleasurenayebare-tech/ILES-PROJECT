@@ -23,7 +23,7 @@ def notify_user(user, title, message):
         send_mail(
             subject=title,
             message=message,
-            from_email=None,
+            from_email=None,   # Uses DEFAULT_FROM_EMAIL from settings.py
             recipient_list=[user.email],
             fail_silently=True,
         )
