@@ -28,6 +28,7 @@ class UpdateProfileView(generics.UpdateAPIView):
 
 class ChangePasswordView(APIView):
       permission_classes = [permissions.IsAuthenticated]
+
       def post(self,request):
           user = request.user
           old_password = request.data.get("old_password")
