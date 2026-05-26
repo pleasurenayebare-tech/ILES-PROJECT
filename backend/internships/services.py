@@ -30,4 +30,4 @@ def notify_user(user, title, message):
 
 def notify_users(users, title, message):
     """
-    Send the same notification to multiple users at once
+    Send the same notification to multiple users at once.
