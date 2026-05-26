@@ -14,6 +14,7 @@ urlpatterns = [
 
     # Refresh an expired access token using a valid refresh token
     path("token/refresh/", TokenRefreshView.as_view(), name="token_refresh"),
-    
+
+    # Get the currently authenticated user's profile
     path("me/", CurrentUserView.as_view(), name="me"),
 ]
