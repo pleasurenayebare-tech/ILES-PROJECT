@@ -17,6 +17,8 @@ def notify_user(user, title, message):
         message=message, 
         channel="in_app"
     )
+
+    
     if user.email:
         send_mail(
             subject=title,
