@@ -11,7 +11,8 @@ urlpatterns = [
 
     # Login and receive access + refresh JWT tokens
     path("login/", TokenObtainPairView.as_view(), name="login"),
-    
+
+    # Refresh an expired access token using a valid refresh token
     path("token/refresh/", TokenRefreshView.as_view(), name="token_refresh"),
     path("me/", CurrentUserView.as_view(), name="me"),
 ]
