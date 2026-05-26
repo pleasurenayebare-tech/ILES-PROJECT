@@ -32,3 +32,4 @@ def notify_users(users, title, message):
     """
     Send the same notification to multiple users at once.
     Loops through a list or queryset of users and calls notify_user for each.
+    """
