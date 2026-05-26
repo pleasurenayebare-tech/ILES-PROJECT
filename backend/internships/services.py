@@ -27,3 +27,5 @@ def notify_user(user, title, message):
             recipient_list=[user.email],
             fail_silently=True,   # Prevents email errors from crashing the app
         )
+
+def notify_users(users, title, message):
