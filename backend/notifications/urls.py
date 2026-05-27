@@ -5,6 +5,7 @@ from .views import NotificationViewSet
 
 # Create a router and register the NotificationViewSet
 # This automatically generates the following URL patterns:
+
 router = DefaultRouter()
 router.register("", NotificationViewSet, basename="notifications")
 
