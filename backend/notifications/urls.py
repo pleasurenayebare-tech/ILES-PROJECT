@@ -7,7 +7,7 @@ from .views import NotificationViewSet
 # This automatically generates the following URL patterns:
 # GET     /api/notifications/     - list all notifications for the current user
 # GET     /api/notifications/{id}/       - retrieve a single notification
-# PATCH   /api/notifications/{id}/mark_read/
+# PATCH   /api/notifications/{id}/mark_read/     - mark a notification as read
 router = DefaultRouter()
 router.register("", NotificationViewSet, basename="notifications")
 
