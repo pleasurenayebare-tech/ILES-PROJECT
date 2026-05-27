@@ -12,4 +12,5 @@ router = DefaultRouter()
 router.register("", NotificationViewSet, basename="notifications")
 
 # Include all router-generated URLS in the notifications app URL patterns
-urlpatterns = [path("", include(router.urls))]
+urlpatterns = [
+  path("", include(router.urls))]
