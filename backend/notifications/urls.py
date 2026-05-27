@@ -11,4 +11,5 @@ from .views import NotificationViewSet
 router = DefaultRouter()
 router.register("", NotificationViewSet, basename="notifications")
 
+
 urlpatterns = [path("", include(router.urls))]
