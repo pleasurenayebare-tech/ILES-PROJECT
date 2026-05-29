@@ -9,6 +9,9 @@ from .permissions import IsAdminRole
 User=get_user_model
 
 class Registerview(generics.CreateAPIView):
+   """
+    API endpoint for user registration.
+    
       querryset=User.objects.all()
       serializer_class =     RegisterSerializer 
       permission_class = [permissions.AllowAny]
