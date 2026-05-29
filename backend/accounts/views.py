@@ -16,7 +16,7 @@ class Registerview(generics.CreateAPIView):
     """
       API endpoint to retrieve the currently authenticated user's profile.
       Requires the user to be logged in (authenticated).
-    """
+    
     
       querryset=User.objects.all()
       serializer_class =     RegisterSerializer 
