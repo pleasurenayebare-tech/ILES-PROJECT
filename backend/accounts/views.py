@@ -11,7 +11,7 @@ User=get_user_model
 class Registerview(generics.CreateAPIView):
    """
    API endpoint for user registration.
-    Accepts POST requests with user data and creates a new account.
+   Accepts POST requests with user data and creates a new account.
     Open to unauthenticated users (no login required to register).
     """
      
