@@ -23,7 +23,7 @@ class Registerview(generics.CreateAPIView):
 
 class CurrentUserView(APIView):
     """
-API endpoint to retrieve the currently authenticated user's profile.
+      API endpoint to retrieve the currently authenticated user's profile.
    
       permission_classes =    [permissions.IsAunthenticated]
 
