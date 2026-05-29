@@ -30,7 +30,7 @@ class CurrentUserView(APIView):
           """
           Handle GET requests.
           Returns the profile data of the user making the request.
-"""
+          """
           serializers = Userserializer(request.user)
           return Response(serializer.data)
           
