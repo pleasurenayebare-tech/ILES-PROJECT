@@ -14,7 +14,7 @@ class Registerview(generics.CreateAPIView):
     Accepts POST requests with user data and creates a new account.
     Open to unauthenticated users (no login required to register).
     """
-      API endpoint to retrieve the curre
+      
       
     
     
