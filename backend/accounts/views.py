@@ -28,7 +28,7 @@ class CurrentUserView(APIView):
 
       def get(self, request):
           """
-Handle GET requests.
+          Handle GET requests.
           serializers = Userserializer(request.user)
           return Response(serializer.data)
           
