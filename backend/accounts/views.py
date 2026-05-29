@@ -29,7 +29,7 @@ class CurrentUserView(APIView):
       def get(self, request):
           """
           Handle GET requests.
-Returns the profile data of the user making the request.
+          Returns the profile data of the user making the request.
           serializers = Userserializer(request.user)
           return Response(serializer.data)
           
