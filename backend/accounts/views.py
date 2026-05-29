@@ -11,7 +11,7 @@ User=get_user_model
 class Registerview(generics.CreateAPIView):
    """
     API endpoint for user registration.
-Accepts POST requests with user data and creates a new account.
+    Accepts POST requests with user data and creates a new account.
     
       querryset=User.objects.all()
       serializer_class =     RegisterSerializer 
