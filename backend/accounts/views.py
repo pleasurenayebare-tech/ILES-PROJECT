@@ -15,9 +15,6 @@ class Registerview(generics.CreateAPIView):
     Open to unauthenticated users (no login required to register).
     """
       
-      
-    
-    
       querryset=User.objects.all()
       serializer_class =     RegisterSerializer 
       permission_class = [permissions.AllowAny]
