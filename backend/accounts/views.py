@@ -15,7 +15,7 @@ class Registerview(generics.CreateAPIView):
     Open to unauthenticated users (no login required to register).
     """
       API endpoint to retrieve the currently authenticated user's profile.
-      Requires the user to be logged in (authenticated).
+      Requires the user to be logged in 
     
     
       querryset=User.objects.all()
