@@ -1,4 +1,4 @@
-from Django.contrib.auth.models import AbstractUser
+fromDjango.contrib.auth.models import AbstractUser
 from django.db import models
 
 
