@@ -1,6 +1,6 @@
  def validate(self, attrs):
     """Cross-field validation to enforce role-specifc required fields."""
-    role = attrs.get("role")
+    role = attrs.get("role"
     
     # students must provide a students number
     if role == "Student" and not attrs.get("student_number"):
