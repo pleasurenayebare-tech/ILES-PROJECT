@@ -1,4 +1,4 @@
-def validate(self, attrs):
+defvalidate(self, attrs):
     """Cross-field validation to enforce role-specifc required fields."""
     role = attrs.get("role")
     
