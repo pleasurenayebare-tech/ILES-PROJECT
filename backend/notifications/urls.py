@@ -3,7 +3,6 @@ from rest_framework.routers import DefaultRouter
 
 from .views import NotificationViewSet
 
-
 # GET     /api/notifications/     - list all notifications for the current user
 # GET     /api/notifications/{id}/       - retrieve a single notification
 # PATCH   /api/notifications/{id}/mark_read/     - mark a notification as read
