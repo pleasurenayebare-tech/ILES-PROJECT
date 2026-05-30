@@ -6,7 +6,6 @@ from .models import Evaluation, EvaluationCriteria, InternshipPlacement, WeeklyL
 User = get_user_model()
 
 
-
 class InternshipPlacementSerializer(serializers.ModelSerializer):
     class Meta:
         model = InternshipPlacement
