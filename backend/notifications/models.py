@@ -3,7 +3,6 @@ from django.db import models
 
 User = settings.AUTH_USER_MODEL
 
-
 class Notification(models.Model):
     CHANNEL_CHOICES = [ 
         ("in_app","In_app"),
