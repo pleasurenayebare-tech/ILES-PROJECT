@@ -42,4 +42,5 @@ class NotificationsModelTest(TestCase):
     def test_notification_belongs_to_correct_user(self):
         """Test that the notification is linked to the correct user."""
         notification = Notification.objects.create(
+            user=self.user,
         
