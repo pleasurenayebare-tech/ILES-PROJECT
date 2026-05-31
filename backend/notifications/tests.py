@@ -34,3 +34,4 @@ class NotificationsModelTest(TestCase):
         notification = Notification.objects.create(
             user=self.user,
             title="Unread Test",
+            message="This should be unread",
