@@ -48,4 +48,5 @@ class NotificationsModelTest(TestCase):
             channel="in_app"
         )
         self.assertEqual(notification.user.username, "testuser")
-        
+
+    def test_notify_user_creates_notification(self):
