@@ -30,3 +30,4 @@ class NotificationsModelTest(TestCase):
         self.assertEqual(notification.title, "Test Notification")
 
     def test_notification_is_unread_by_default(self):
+        """Test that a newly created notification is unread by default."""
