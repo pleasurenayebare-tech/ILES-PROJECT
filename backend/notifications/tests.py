@@ -14,3 +14,4 @@ class NotificationsModelTest(TestCase):
         """Set up a test user before each test runs."""
         self.user = User.objects.create_user(
             username="testuser",
+            email="testuser@test.com"
