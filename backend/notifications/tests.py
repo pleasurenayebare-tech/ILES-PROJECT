@@ -57,3 +57,4 @@ class NotificationsModelTest(TestCase):
     def test_notify_user_correct_title(self):
         """Test that the notification created by notify_user has the correct title."""
         notify_user(self.user, "Log Returned", "Please revise your log.")
+        notification = Notification.objects.first()
