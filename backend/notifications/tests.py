@@ -22,3 +22,4 @@ class NotificationsModelTest(TestCase):
         """Test that a notification is created and saved to the database."""
         notification = Notification.object.create(
             user=self.user,
+            title="Test Notification"
