@@ -33,3 +33,4 @@ class NotificationsModelTest(TestCase):
         """Test that a newly created notification is unread by default."""
         notification = Notification.objects.create(
             user=self.user,
+            title="Unread Test",
