@@ -52,3 +52,4 @@ class NotificationsModelTest(TestCase):
     def test_notify_user_creates_notification(self):
         """Test that calling notify_user creates a notification in the database."""
         notify_user(self.user, "Log Approved", "Your weekly log has been approved.")
+        self.assertEqual(Notification.objects.count(), 1)
