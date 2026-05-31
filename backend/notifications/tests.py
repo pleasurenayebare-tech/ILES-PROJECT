@@ -23,3 +23,4 @@ class NotificationsModelTest(TestCase):
         notification = Notification.object.create(
             user=self.user,
             title="Test Notification",
+            message="This is a test message.",
