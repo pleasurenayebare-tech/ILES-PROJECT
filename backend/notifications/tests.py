@@ -19,3 +19,4 @@ class NotificationsModelTest(TestCase):
         )
 
     def test_notification_created_successfully(self):
+        """
