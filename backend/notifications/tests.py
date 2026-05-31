@@ -35,3 +35,4 @@ class NotificationsModelTest(TestCase):
             user=self.user,
             title="Unread Test",
             message="This should be unread",
+            channel="in_app"
