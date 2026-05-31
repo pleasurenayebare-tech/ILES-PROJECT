@@ -9,7 +9,7 @@ class UserRole(models.TextChoices):
     ADMIN= "Admin", "Internship Administrator"
 
 
-class CustomUser(AbstractUser)
+class CustomUser(AbstractUser):
     role = models.CharField(max_length=32, choices=UserRole.choices, default=UserRole.STUDENT)
     department = models.CharField(max_length=150, blank=True, null=True)
     staff_number = models.CharField(max_length=50, blank=True, null=True, unique=True)
