@@ -36,3 +36,4 @@ class NotificationsModelTest(TestCase):
             title="Unread Test",
             message="This should be unread",
             channel="in_app"
+        )
