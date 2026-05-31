@@ -1,4 +1,4 @@
-from rest_framework.permissions import BasePermission
+fromrest_framework.permissions import BasePermission
 
 
 class IsRole(BasePermission):
