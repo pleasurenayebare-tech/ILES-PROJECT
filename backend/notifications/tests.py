@@ -28,3 +28,5 @@ class NotificationsModelTest(TestCase):
         )
         self.assertEqual(Notification.objects.count(), 1)
         self.assertEqual(notification.title, "Test Notification")
+
+    def test_notification_is_unread_by_default(self):
