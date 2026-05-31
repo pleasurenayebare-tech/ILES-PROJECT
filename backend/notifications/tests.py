@@ -10,3 +10,4 @@ User = get_user_model()
 class NotificationsModelTest(TestCase):
   """Test cases for the Notification model."""
   
+  def setUp(self):
