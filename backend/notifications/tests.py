@@ -40,3 +40,5 @@ class NotificationsModelTest(TestCase):
         self.assertFalse(notification.is_read)
 
     def test_notification_belongs_to_correct_user(self):
+        
+        
