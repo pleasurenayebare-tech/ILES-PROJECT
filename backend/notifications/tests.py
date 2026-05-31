@@ -7,3 +7,4 @@ from notifications.utils import notify_user
 User = get_user_model()
 
 
+class NotificationsModelTest(TestCase):
