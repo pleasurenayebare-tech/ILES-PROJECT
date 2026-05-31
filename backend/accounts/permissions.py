@@ -8,7 +8,7 @@ class IsRole(BasePermission):
         return bool(request.user and request.user.is_authenticated and request.user.is_active and request.user.role in self.allowed_roles)
 
 
-class IsStudent(IsRole):
+class IsStudent(IsRole)
     allowed_roles = {"Student"}
 
 
