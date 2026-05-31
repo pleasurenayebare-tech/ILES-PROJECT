@@ -17,3 +17,5 @@ class NotificationsModelTest(TestCase):
             email="testuser@test.com",
             password="Test1234!",
         )
+
+    def test_notification_created_successfully(self):
