@@ -16,3 +16,4 @@ class NotificationsModelTest(TestCase):
             username="testuser",
             email="testuser@test.com",
             password="Test1234!",
+        )
