@@ -26,3 +26,4 @@ class NotificationsModelTest(TestCase):
             message="This is a test message.",
             channel="in_app"
         )
+        self.assertEqual(Notification.objects.count(), 1)
