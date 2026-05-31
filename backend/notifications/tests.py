@@ -43,4 +43,5 @@ class NotificationsModelTest(TestCase):
         """Test that the notification is linked to the correct user."""
         notification = Notification.objects.create(
             user=self.user,
+            title="User Test",
         
