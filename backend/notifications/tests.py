@@ -58,3 +58,4 @@ class NotificationsModelTest(TestCase):
         """Test that the notification created by notify_user has the correct title."""
         notify_user(self.user, "Log Returned", "Please revise your log.")
         notification = Notification.objects.first()
+        self.assertEqual(notification.title, "Log Returned")
