@@ -55,3 +55,4 @@ class NotificationsModelTest(TestCase):
         self.assertEqual(Notification.objects.count(), 1)
 
     def test_notify_user_correct_title(self):
+        """Test that the notification created by notify_user has the correct title."""
