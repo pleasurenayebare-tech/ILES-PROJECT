@@ -45,4 +45,5 @@ class NotificationsModelTest(TestCase):
             user=self.user,
             title="User Test",
             message="Belongs to testuser.",
+            channel="in_app"
         
