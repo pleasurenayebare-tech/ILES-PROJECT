@@ -37,3 +37,4 @@ class NotificationsModelTest(TestCase):
             message="This should be unread",
             channel="in_app"
         )
+        self.assertFalse(notification.is_read)
