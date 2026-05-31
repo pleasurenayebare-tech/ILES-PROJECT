@@ -20,3 +20,4 @@ class NotificationsModelTest(TestCase):
 
     def test_notification_created_successfully(self):
         """Test that a notification is created and saved to the database."""
+        notification = Notification.object.create(
