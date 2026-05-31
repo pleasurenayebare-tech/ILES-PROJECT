@@ -8,4 +8,4 @@ User = get_user_model()
 
 
 class NotificationsModelTest(TestCase):
-  """Test cases for the Notification model.
+  """Test cases for the Notification model."""
