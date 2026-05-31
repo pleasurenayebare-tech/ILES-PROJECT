@@ -44,4 +44,5 @@ class NotificationsModelTest(TestCase):
         notification = Notification.objects.create(
             user=self.user,
             title="User Test",
+            message="Belongs to testuser.",
         
