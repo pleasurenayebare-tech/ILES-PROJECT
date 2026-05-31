@@ -1,7 +1,7 @@
 from rest_framework.permissions import BasePermission
 
 
-classIsRole(BasePermission):
+class IsRole(BasePermission):
     allowed_roles = set()
 
     def has_permission(self, request, view):
