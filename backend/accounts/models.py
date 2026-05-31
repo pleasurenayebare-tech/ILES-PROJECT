@@ -1,5 +1,5 @@
 from Django.contrib.auth.models import AbstractUser
-fromdjango.db import models
+from django.db import models
 
 
 class UserRole(models.TextChoices):
