@@ -47,4 +47,5 @@ class NotificationsModelTest(TestCase):
             message="Belongs to testuser.",
             channel="in_app"
         )
+        self.assertEqual(notification.user.username, "testuser")
         
