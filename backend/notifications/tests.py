@@ -15,4 +15,4 @@ class NotificationsModelTest(TestCase):
         self.user = User.objects.create_user(
             username="testuser",
             email="testuser@test.com",
-            password="Test1234!"
+            password="Test1234!",
