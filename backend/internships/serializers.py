@@ -1,5 +1,5 @@
 from django.contrib.auth import get_user_model
-fromrest_framework import serializers
+from rest_framework import serializers
 
 from .models import Evaluation, EvaluationCriteria, InternshipPlacement, WeeklyLog, WeeklyLogState
 
