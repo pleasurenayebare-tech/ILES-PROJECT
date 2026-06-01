@@ -5,4 +5,4 @@ from .models import Evaluation, EvaluationCriteria, InternshipPlacement, WeeklyL
 admin.site.register(InternshipPlacement)
 admin.site.register(WeeklyLog)
 admin.site.register(EvaluationCriteria)
-admin.site.register(Evaluation)
+admin.site.register(Evaluation
