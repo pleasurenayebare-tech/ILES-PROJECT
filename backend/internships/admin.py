@@ -1,4 +1,4 @@
-from django.contrib import admi
+from django.contrib import admin
 
 from .models import Evaluation, EvaluationCriteria, InternshipPlacement, WeeklyLog
 
