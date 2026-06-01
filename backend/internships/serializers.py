@@ -3,7 +3,7 @@ from rest_framework import serializers
 
 from .models import Evaluation, EvaluationCriteria, InternshipPlacement, WeeklyLog, WeeklyLogState
 
-User = get_user_model()
+User = get_user_model(
 
 
 class InternshipPlacementSerializer(serializers.ModelSerializer):
