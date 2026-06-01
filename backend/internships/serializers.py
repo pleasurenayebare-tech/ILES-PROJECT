@@ -7,7 +7,7 @@ User = get_user_model()
 
 
 class InternshipPlacementSerializer(serializers.ModelSerializer):
-    class Meta
+    class Meta:
         model = InternshipPlacement
         fields = "__all__"
         read_only_fields = ("created_at", "updated_at")
