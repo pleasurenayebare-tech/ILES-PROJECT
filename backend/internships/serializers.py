@@ -18,7 +18,7 @@ class WeeklyLogSerializer(serializers.ModelSerializer):
     company_name = serializers.CharField(source="placement.company_name", read_only=True)
 
     class Meta:
-        model = WeeklyLog
+        model = WeeklyLo
         fields = "__all__"
         read_only_fields = (
             "student",
