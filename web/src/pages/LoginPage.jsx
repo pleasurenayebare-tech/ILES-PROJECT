@@ -9,7 +9,7 @@ export default function LoginPage() {
   const { login, user } = useAuth();
   const navigate = useNavigate();
 
-  if (user) navigate("/");
+  
 
   const submit = async (e) => {
     e.preventDefault();
