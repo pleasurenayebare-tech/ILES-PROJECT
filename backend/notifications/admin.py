@@ -17,3 +17,4 @@ class NotificationAdmin(admin.ModelAdmin):
 
     # Order notifications by newest first
     ordering = ("-created_at",)
+    
