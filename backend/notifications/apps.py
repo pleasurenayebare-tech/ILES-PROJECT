@@ -8,4 +8,4 @@ class NotificationsConfig(AppConfig):
     default_auto_field = "django.db.models.BigAutoField"
 
     # The name of the app as recognised by Django
-    name = 'notifications'
+    name = "notifications"
