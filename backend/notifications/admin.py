@@ -8,4 +8,5 @@ class NotificationAdmin(admin.ModelAdmin):
 
     # Columns displayed in the notification list view
     list_display = ("user", "title", "channel", "is_read", "created_at")
-    
+
+    # Filters available in the right sidebar of the admin list view
