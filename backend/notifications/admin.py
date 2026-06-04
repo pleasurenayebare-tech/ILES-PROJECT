@@ -6,4 +6,4 @@ from .models import Notification
 class NotificationAdmin(admin.ModelAdmin):
     """Admin configuration for the Notification model."""
 
-    
+    # Columns displayed in the notification list view
