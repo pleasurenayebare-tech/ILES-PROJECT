@@ -24,7 +24,6 @@ const loadData = async () => {
       
      
     
-  
 
   useEffect(() => { loadData(); }, []);
 
