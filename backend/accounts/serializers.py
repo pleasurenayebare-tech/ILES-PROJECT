@@ -12,7 +12,7 @@
         
     return attrs
 
-class RegisterSerializer(serializers.ModelSerializer)
+class RegisterSerializer(serializers.ModelSerializer):
     """Serialiser for handling new user registration."""
     
     # Password is write-only so it is never returned in API responses
