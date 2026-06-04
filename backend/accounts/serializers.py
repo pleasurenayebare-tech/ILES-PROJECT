@@ -13,7 +13,7 @@
     return attrs
 
 class RegisterSerializer(serializers.ModelSerializer):
-    """Serialiser for handling new user registration."""
+    """Serialiser for handling new user registration.""
     
     # Password is write-only so it is never returned in API responses
     password = serializers.CharField(write_only=True)
