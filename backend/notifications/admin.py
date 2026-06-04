@@ -10,4 +10,4 @@ class NotificationAdmin(admin.ModelAdmin):
     list_display = ("user", "title", "channel", "is_read", "created_at")
 
     # Filters available in the right sidebar of the admin list view
-    list_filter = ("isread", "channel")
+    list_filter = ("is_read", "channel")
