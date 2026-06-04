@@ -14,4 +14,5 @@ class NotificationAdmin(admin.ModelAdmin):
 
     # Fields that can be searched in the admin search bar
     search_fields = ("user__username", "title", "message")
-    
+
+    # Order notifications by newest first
