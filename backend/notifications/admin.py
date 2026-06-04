@@ -4,4 +4,4 @@ from .models import Notification
 
 @admin.register(Notification)
 class NotificationAdmin(admin.ModelAdmin):
-    """Admin configuration for the Notification model.
+    """Admin configuration for the Notification model."""
