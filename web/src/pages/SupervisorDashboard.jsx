@@ -13,6 +13,7 @@ const loadData = async () => {
        api.get("/dashboard/stats/"),
        api.get("/weekly-logs/"),
      ]);
+setStats(statsRes.data);
   
     const [statsRes, logsRes] = await Promise.all([
       api.get("/dashboard/stats/"),
