@@ -10,7 +10,7 @@ export default function LoginPage() {
   const navigate = useNavigate();
 
   useEffect(() => {
-if (user) navigate("/");
+    if (user) navigate("/");
 
   const submit = async (e) => {
     e.preventDefault();
