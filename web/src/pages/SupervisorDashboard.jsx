@@ -20,7 +20,7 @@ const loadData = async () => {
    }
 };
   
-     Promise.all([
+     
       api.get("/dashboard/stats/"),
       api.get("/weekly-logs/"),
     ]);
