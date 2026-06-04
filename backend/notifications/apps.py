@@ -12,4 +12,4 @@ class NotificationsConfig(AppConfig):
 
     def ready(self):
         """Called when the app is fully loaded."""
-        pass
+        pass   # Reserved for future signal imports if needed
