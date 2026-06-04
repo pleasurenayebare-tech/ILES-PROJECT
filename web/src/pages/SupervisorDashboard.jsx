@@ -14,7 +14,7 @@ const loadData = async () => {
        api.get("/weekly-logs/"),
      ]);
      setStats(statsRes.data);
-setLogs(logsRes.data);
+     setLogs(logsRes.data);
   
     const [statsRes, logsRes] = await Promise.all([
       api.get("/dashboard/stats/"),
