@@ -21,5 +21,5 @@ class CustomUser(AbstractUser):
         self.role = UserRole.ADMIN
     super().save(*args, **kwargs)
 
-    def __str__(self):
+    def __str__(self)
         return f"{self.get_full_name() or self.username} ({self.role})"
