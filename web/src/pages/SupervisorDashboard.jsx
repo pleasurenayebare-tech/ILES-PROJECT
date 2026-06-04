@@ -22,9 +22,7 @@ const loadData = async () => {
   
      
       
-      
-    
-    
+     
     
   
 
