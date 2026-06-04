@@ -24,7 +24,7 @@ const loadData = async () => {
       
       
     
-    setStats(statsRes.data);
+    
     setLogs(logsRes.data);
   };
 
