@@ -6,7 +6,7 @@ class UserRole(models.TextChoices):
     STUDENT = "Student", "Student"
     WORKPLACE_SUPERVISOR = "WorkplaceSupervisor", "Workplace Supervisor"
     ACADEMIC_SUPERVISOR = "AcademicSupervisor", "Academic Supervisor"
-    ADMIN= "Admin", "Internship Administrator
+    ADMIN= "Admin", "Internship Administrator"
 
 
 class CustomUser(AbstractUser):
