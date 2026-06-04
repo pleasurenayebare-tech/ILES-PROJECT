@@ -18,7 +18,7 @@ class RegisterSerializer(serializers.ModelSerializer):
     # Password is write-only so it is never returned in API responses
     password = serializers.CharField(write_only=True)
 
-    class Meta:
+    class Meta
         model = User
         fields = (...)
         read_only_fields = ("id", "role") # These fields are set by the system, not the user
