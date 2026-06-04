@@ -16,3 +16,4 @@ class NotificationAdmin(admin.ModelAdmin):
     search_fields = ("user__username", "title", "message")
 
     # Order notifications by newest first
+    ordering = ("-created_at",)
