@@ -16,7 +16,7 @@ class CustomUser(AbstractUser):
     student_number = models.CharField(max_length=50, blank=True, null=True, unique=True)
     phone_number = models.CharField(max_length=20, blank=True, null=True)
 
-    def save(self, *args, **kwargs)
+    def save(self, *args, **kwargs):
         if self.is_superuser:
         self.role = UserRole.ADMIN
     super().save(*args, **kwargs)
