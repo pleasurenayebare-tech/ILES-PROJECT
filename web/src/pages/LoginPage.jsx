@@ -11,6 +11,7 @@ export default function LoginPage() {
 
   useEffect(() => {
     if (user) navigate("/");
+}, [user]);
 
   const submit = async (e) => {
     e.preventDefault();
