@@ -5,6 +5,18 @@ from django.contrib.auth import get_user_model
 User = get_user_model()
 
 
+class UserSerializer(serializers.ModelSerializer):
+    """Serializer for reading and updating user profile data."""
+
+    class Meta:
+        model = User
+        fields = (
+            "id", "username", "email", "first_name", "last_name",
+            "role", "student_number", "staff_number", "phone_number", "department"
+        )
+        read_only_fields = ("id", "role")
+
+
 class RegisterSerializer(serializers.ModelSerializer):
     """Serializer for handling new user registration."""
 
@@ -17,7 +29,7 @@ class RegisterSerializer(serializers.ModelSerializer):
             "id", "username", "email", "first_name", "last_name",
             "password", "role", "student_number", "staff_number"
         )
-        read_only_fields = ("id",)  # This field is set by the system, not the user
+        read_only_fields = ("id",)
 
     def validate_password(self, value):
         """Validate password strength using Django's built-in validators."""
