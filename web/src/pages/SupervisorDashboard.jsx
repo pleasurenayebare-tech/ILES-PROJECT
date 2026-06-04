@@ -25,7 +25,7 @@ const loadData = async () => {
       
     
     
-    setLogs(logsRes.data);
+    
   
 
   useEffect(() => { loadData(); }, []);
