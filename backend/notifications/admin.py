@@ -19,3 +19,4 @@ class NotificationAdmin(admin.ModelAdmin):
     ordering = ("-created_at",)
 
     # Make created_at read only since it is auto generated
+    readonly_fields = ("created_at",)
