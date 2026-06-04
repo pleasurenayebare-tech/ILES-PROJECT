@@ -21,7 +21,7 @@ const loadData = async () => {
 };
   
      
-      api.get("/dashboard/stats/"),
+      
       api.get("/weekly-logs/"),
     ]);
     setStats(statsRes.data);
