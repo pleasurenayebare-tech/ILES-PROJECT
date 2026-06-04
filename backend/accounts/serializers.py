@@ -19,7 +19,7 @@ class RegisterSerializer(serializers.ModelSerializer):
     password = serializers.CharField(write_only=True)
 
     class Meta:
-        model = Use
+        model = User
         fields = (...)
         read_only_fields = ("id", "role") # These fields are set by the system, not the user
 
