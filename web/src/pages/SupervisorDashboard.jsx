@@ -23,8 +23,6 @@ const loadData = async () => {
      
       
      
-    
-
   useEffect(() => { loadData(); }, []);
 
   const transition = async (id, status) => {
