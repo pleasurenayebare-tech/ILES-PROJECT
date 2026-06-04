@@ -19,8 +19,7 @@ const loadData = async () => {
      toast.error("Failed to load dashboard data");
    }
 };
-  
-         
+       
   useEffect(() => { loadData(); }, []);
 
   const transition = async (id, status) => {
