@@ -13,3 +13,4 @@ class NotificationAdmin(admin.ModelAdmin):
     list_filter = ("is_read", "channel")
 
     # Fields that can be searched in the admin search bar
+    search_fields = ("user_username", "title", "message")
