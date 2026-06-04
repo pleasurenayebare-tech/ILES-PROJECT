@@ -7,6 +7,7 @@ export default function SupervisorDashboard() {
   const [stats, setStats] = useState({});
   const [logs, setLogs] = useState([]);
 
+const loadData = async () => {
   
     const [statsRes, logsRes] = await Promise.all([
       api.get("/dashboard/stats/"),
