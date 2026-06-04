@@ -2,7 +2,7 @@
     """Cross-field validation to enforce role-specifc required fields."""
     role = attrs.get("role")
     
-    # students must provide a students numbe
+    # students must provide a students number
     if role == "Student" and not attrs.get("student_number"):
         raise serializers.ValidationError({"student_number": "Required for students."})
         
