@@ -6,7 +6,7 @@ class UserRole(models.TextChoices):
     STUDENT = "Student", "Student"
     WORKPLACE_SUPERVISOR = "WorkplaceSupervisor", "Workplace Supervisor"
     ACADEMIC_SUPERVISOR = "AcademicSupervisor", "Academic Supervisor"
-    ADMIN= "Admin", "Internship Administrator"
+    ADMIN = "Admin", "Internship Administrator"
 
 
 class CustomUser(AbstractUser):
@@ -18,8 +18,8 @@ class CustomUser(AbstractUser):
 
     def save(self, *args, **kwargs):
         if self.is_superuser:
-        self.role = UserRole.ADMIN
-    super().save(*args, **kwargs)
+            self.role = UserRole.ADMIN
+        super().save(*args, **kwargs)
 
     def __str__(self):
         return f"{self.get_full_name() or self.username} ({self.role})"
