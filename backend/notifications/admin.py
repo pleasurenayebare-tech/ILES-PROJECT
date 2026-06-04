@@ -11,3 +11,4 @@ class NotificationAdmin(admin.ModelAdmin):
 
     # Filters available in the right sidebar of the admin list view
     list_filter = ("is_read", "channel")
+    
