@@ -15,6 +15,7 @@ const loadData = async () => {
      ]);
      setStats(statsRes.data);
      setLogs(logsRes.data);
+} catch {
   
     const [statsRes, logsRes] = await Promise.all([
       api.get("/dashboard/stats/"),
