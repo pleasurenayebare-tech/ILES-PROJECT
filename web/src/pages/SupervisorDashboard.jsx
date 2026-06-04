@@ -9,6 +9,7 @@ export default function SupervisorDashboard() {
 
 const loadData = async () => {
    try {
+const [statsRes, logsRes] = await Promise.all([
   
     const [statsRes, logsRes] = await Promise.all([
       api.get("/dashboard/stats/"),
