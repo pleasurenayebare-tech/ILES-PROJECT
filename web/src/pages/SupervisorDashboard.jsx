@@ -17,6 +17,7 @@ const loadData = async () => {
      setLogs(logsRes.data);
    } catch {
      toast.error("Failed to load dashboard data");
+}
   
     const [statsRes, logsRes] = await Promise.all([
       api.get("/dashboard/stats/"),
