@@ -22,7 +22,7 @@ const loadData = async () => {
   
      
       
-      api.get("/weekly-logs/"),
+      
     ]);
     setStats(statsRes.data);
     setLogs(logsRes.data);
