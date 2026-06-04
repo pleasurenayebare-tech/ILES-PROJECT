@@ -96,7 +96,7 @@ export default function RegisterPage() {
             <option value="Student">Student</option>
             <option value="WorkplaceSupervisor">Workplace Supervisor</option>
             <option value="AcademicSupervisor">Academic Supervisor</option>
-            <option value="Admin">Admin</
+            
           </select>
 
           <div className="form-row">
