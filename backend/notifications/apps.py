@@ -9,4 +9,5 @@ class NotificationsConfig(AppConfig):
 
     # The name of the app as recognised by Django
     name = "notifications"
+
     
