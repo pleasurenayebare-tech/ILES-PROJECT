@@ -9,7 +9,7 @@ export default function LoginPage() {
   const { login, user } = useAuth();
   const navigate = useNavigate();
 
-  useEffect(() => {
+ useEffect(() => {
     if (user) navigate("/");
 }, [user]);
 
