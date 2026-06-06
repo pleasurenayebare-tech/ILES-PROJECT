@@ -24,3 +24,4 @@ class WeeklyLogAdmin(admin.ModelAdmin):
     """Admin configuration for the WeeklyLog model."""
 
     list_display = ("student", "week_number", "title", "status", "created_at")
+    list_filter = ("status",)
