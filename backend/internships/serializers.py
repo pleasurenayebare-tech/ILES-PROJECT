@@ -33,7 +33,6 @@ class WeeklyLogSerializer(serializers.ModelSerializer):
         validated_data["student"] = self.context["request"].user
         return super().create(validated_data)
 
-
 class WeeklyLogStatusSerializer(serializers.Serializer):
     status = serializers.ChoiceField(choices=WeeklyLogState.choices)
     supervisor_comment = serializers.CharField(required=False, allow_blank=True)
