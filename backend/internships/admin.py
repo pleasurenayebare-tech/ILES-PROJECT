@@ -27,3 +27,4 @@ class WeeklyLogAdmin(admin.ModelAdmin):
     list_filter = ("status",)
     search_fields = ("student__username", "title")
     ordering = ("-created_at",)
+    readonly_fields = ("created_at",)
