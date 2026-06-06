@@ -37,7 +37,6 @@ class WeeklyLogStatusSerializer(serializers.Serializer):
     status = serializers.ChoiceField(choices=WeeklyLogState.choices)
     supervisor_comment = serializers.CharField(required=False, allow_blank=True)
 
-
 class EvaluationCriteriaSerializer(serializers.ModelSerializer):
     class Meta:
         model = EvaluationCriteria
