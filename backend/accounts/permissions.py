@@ -6,7 +6,6 @@ class IsRole(BasePermission):
     def has_permission(self, request, view):
         return bool(request.user and request.user.is_authenticated and request.user.is_active and request.user.role in self.allowed_roles)
 
-
 class IsStudent(IsRole):
     allowed_roles = {"Student"}
 
