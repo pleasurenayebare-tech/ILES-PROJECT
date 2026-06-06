@@ -39,3 +39,5 @@ class EvaluationCriteriaAdmin(admin.ModelAdmin):
 
 
 @admin.register(Evaluation)
+class EvaluationAdmin(admin.ModelAdmin):
+    """Admin configuraton for the Evaluation model."""
