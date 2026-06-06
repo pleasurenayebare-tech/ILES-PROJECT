@@ -5,7 +5,7 @@ from django.db import models
 class UserRole(models.TextChoices):
     STUDENT = "Student", "Student"
     WORKPLACE_SUPERVISOR = "WorkplaceSupervisor", "Workplace Supervisor"
-    ACADEMIC_SUPERVISOR = "AcademicSupervisor", "Academic Supervisor"
+    ACADEMIC_SUPERVISOR = "AcademicSupervisor", "Academic Supervisor
     ADMIN = "Admin", "Internship Administrator"
 
 
