@@ -33,3 +33,5 @@ class WeeklyLogAdmin(admin.ModelAdmin):
 @admin.register(EvaluationCriteria)
 class EvaluationCriteriaAdmin(admin.ModelAdmin):
     """Admin configuration for the EvaluationCriteria model."""
+
+    list_display = ("name", "max_score")
