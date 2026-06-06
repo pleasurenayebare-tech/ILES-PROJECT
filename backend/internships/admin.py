@@ -16,3 +16,4 @@ class InternshipPlacementAdmin(admin.ModelAdmin):
     search_field = ("student__username", "company_name", "position_title")
 
     # Order placements by most recent start date first
+    ordering = ("-start_date",)
