@@ -31,3 +31,4 @@ class WeeklyLogAdmin(admin.ModelAdmin):
 
 
 @admin.register(EvaluationCriteria)
+class EvaluationCriteriaAdmin(admin.ModelAdmin):
