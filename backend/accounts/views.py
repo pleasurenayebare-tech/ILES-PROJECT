@@ -6,7 +6,6 @@ from rest_framework_simplejwt.tokens import RefreshToken
 from .serializers import RegisterSerializer, UserSerializer
 from .permissions import IsAdminRole
 
-
 User = get_user_model()
 
 class RegisterView(generics.CreateAPIView):
