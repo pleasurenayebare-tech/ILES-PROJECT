@@ -26,3 +26,4 @@ class WeeklyLogAdmin(admin.ModelAdmin):
     list_display = ("student", "week_number", "title", "status", "created_at")
     list_filter = ("status",)
     search_fields = ("student__username", "title")
+    ordering = ("-created_at",)
