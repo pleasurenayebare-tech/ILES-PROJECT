@@ -13,3 +13,4 @@ class InternshipPlacementAdmin(admin.ModelAdmin):
     last_filter = ("status",)
     
     # Fields that can be searched in the admin search bar
+    search_field = ("student__username", "company_name", "position_title")
