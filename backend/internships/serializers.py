@@ -43,7 +43,6 @@ class EvaluationCriteriaSerializer(serializers.ModelSerializer):
         model = EvaluationCriteria
         fields = "__all__"
 
-
 class EvaluationSerializer(serializers.ModelSerializer):
     evaluator_name = serializers.CharField(source="evaluator.get_full_name", read_only=True)
 
