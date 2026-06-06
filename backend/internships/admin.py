@@ -4,5 +4,5 @@ from .models import Evaluation, EvaluationCriteria, InternshipPlacement, WeeklyL
 
 @admin.register(InternshipPlacement)
 class InternshipPlacementAdmin(admin.ModelAdmin):
-
+    """Admin configuration for the IntershipPlacement model."""
 
