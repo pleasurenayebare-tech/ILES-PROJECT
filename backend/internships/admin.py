@@ -11,3 +11,5 @@ class InternshipPlacementAdmin(admin.ModelAdmin):
 
     # Filters available in the right sidebar
     last_filter = ("status",)
+    
+    # Fields that can be searched in the admin search bar
