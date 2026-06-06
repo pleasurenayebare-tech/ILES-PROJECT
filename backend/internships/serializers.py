@@ -50,7 +50,6 @@ class EvaluationSerializer(serializers.ModelSerializer):
         fields = "__all__"
         read_only_fields = ("evaluator", "final_score", "created_at", "updated_at")
 
-
     def create(self, validated_data):
         validated_data["evaluator"] = self.context["request"].user
         return super().create(validated_data)
