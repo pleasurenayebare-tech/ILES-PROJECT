@@ -9,7 +9,6 @@ from .permissions import IsAdminRole
 
 User = get_user_model()
 
-
 class RegisterView(generics.CreateAPIView):
     """
     API endpoint for user registration.
