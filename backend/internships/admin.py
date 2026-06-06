@@ -28,3 +28,6 @@ class WeeklyLogAdmin(admin.ModelAdmin):
     search_fields = ("student__username", "title")
     ordering = ("-created_at",)
     readonly_fields = ("created_at",)
+
+
+@admin.register(EvaluationCriteria)
