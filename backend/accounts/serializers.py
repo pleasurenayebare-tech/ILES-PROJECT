@@ -43,7 +43,6 @@ class RegisterSerializer(serializers.ModelSerializer):
     def validate(self, attrs):
         """Cross-field validation to enforce role-specific required fields."""
         role = attrs.get("role")
-
         # Students must provide a student number
         if role == "Student" and not attrs.get("student_number"):
             raise serializers.ValidationError({"student_number": "Required for students."})
