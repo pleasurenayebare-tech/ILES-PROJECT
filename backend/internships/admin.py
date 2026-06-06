@@ -41,3 +41,5 @@ class EvaluationCriteriaAdmin(admin.ModelAdmin):
 @admin.register(Evaluation)
 class EvaluationAdmin(admin.ModelAdmin):
     """Admin configuraton for the Evaluation model."""
+
+    list_display = ("placement", "evaluator", "total_score", "created_at")
