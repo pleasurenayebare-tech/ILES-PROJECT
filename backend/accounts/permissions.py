@@ -15,7 +15,6 @@ class IsWorkplaceSupervisor(IsRole):
 class IsAcademicSupervisor(IsRole):
     allowed_roles = {"AcademicSupervisor"}
 
-
 class IsAdminRole(IsRole):
     allowed_roles = {"Admin"}
 
