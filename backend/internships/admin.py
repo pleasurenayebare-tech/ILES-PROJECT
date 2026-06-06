@@ -22,3 +22,5 @@ class InternshipPlacementAdmin(admin.ModelAdmin):
 @admin.register(WeeklyLog)
 class WeeklyLogAdmin(admin.ModelAdmin):
     """Admin configuration for the WeeklyLog model."""
+
+    list_display = ("student", "week_number", "title", "status", "created_at")
