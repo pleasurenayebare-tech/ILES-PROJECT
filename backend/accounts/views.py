@@ -6,7 +6,7 @@ from rest_framework_simplejwt.tokens import RefreshToken
 from .serializers import RegisterSerializer, UserSerializer
 from .permissions import IsAdminRole
 
-# Get the active User model (supports custom user models defined in settings.py)
+# Get the active User model 
 User = get_user_model()
 
 
