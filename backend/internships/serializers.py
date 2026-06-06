@@ -12,7 +12,6 @@ class InternshipPlacementSerializer(serializers.ModelSerializer):
         fields = "__all__"
         read_only_fields = ("created_at", "updated_at")
 
-
 class WeeklyLogSerializer(serializers.ModelSerializer):
     student_name = serializers.CharField(source="student.get_full_name", read_only=True)
     company_name = serializers.CharField(source="placement.company_name", read_only=True)
