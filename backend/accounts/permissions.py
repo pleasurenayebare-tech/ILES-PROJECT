@@ -9,7 +9,6 @@ class IsRole(BasePermission):
 class IsStudent(IsRole):
     allowed_roles = {"Student"}
 
-
 class IsWorkplaceSupervisor(IsRole):
     allowed_roles = {"WorkplaceSupervisor"}
 
