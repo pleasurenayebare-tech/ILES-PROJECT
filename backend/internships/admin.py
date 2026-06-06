@@ -43,3 +43,4 @@ class EvaluationAdmin(admin.ModelAdmin):
     """Admin configuraton for the Evaluation model."""
 
     list_display = ("placement", "evaluator", "total_score", "created_at")
+    search_fields = ("placement__company_name", "evaluator__username")
