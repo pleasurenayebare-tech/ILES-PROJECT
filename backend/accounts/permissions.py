@@ -1,6 +1,5 @@
 from rest_framework.permissions import BasePermission
 
-
 class IsRole(BasePermission):
     allowed_roles = set()
 
