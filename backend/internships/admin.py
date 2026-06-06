@@ -10,3 +10,4 @@ class InternshipPlacementAdmin(admin.ModelAdmin):
     list_display = ("student", "company_name", "position_title", "start_date", "end_date", "status")
 
     # Filters available in the right sidebar
+    last_filter = ("status",)
