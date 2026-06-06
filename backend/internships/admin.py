@@ -20,3 +20,4 @@ class InternshipPlacementAdmin(admin.ModelAdmin):
 
 
 @admin.register(WeeklyLog)
+class WeeklyLogAdmin(admin.ModelAdmin):
