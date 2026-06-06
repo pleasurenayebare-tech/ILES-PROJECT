@@ -14,3 +14,5 @@ class InternshipPlacementAdmin(admin.ModelAdmin):
     
     # Fields that can be searched in the admin search bar
     search_field = ("student__username", "company_name", "position_title")
+
+    # Order placements by most recent start date first
