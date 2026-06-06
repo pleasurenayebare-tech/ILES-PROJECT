@@ -8,3 +8,5 @@ class InternshipPlacementAdmin(admin.ModelAdmin):
 
     # Columns displayed in the placement list view
     list_display = ("student", "company_name", "position_title", "start_date", "end_date", "status")
+
+    # Filters available in the right sidebar
