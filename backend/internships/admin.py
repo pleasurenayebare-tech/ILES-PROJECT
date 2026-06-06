@@ -35,3 +35,4 @@ class EvaluationCriteriaAdmin(admin.ModelAdmin):
     """Admin configuration for the EvaluationCriteria model."""
 
     list_display = ("name", "max_score")
+    search_fields = ("name",)
