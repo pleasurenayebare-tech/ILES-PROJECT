@@ -40,7 +40,6 @@ class InternshipPlacement(models.Model):
     def __str__(self):
         return f"{self.student.username} - {self.company_name}"
 
-
 class WeeklyLogState(models.TextChoices):
     DRAFT = "Draft", "Draft"
     SUBMITTED = "Submitted", "Submitted"
