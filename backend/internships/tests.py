@@ -8,7 +8,6 @@ from .models import Evaluation, InternshipPlacement, WeeklyLog
 
 User = get_user_model()
 
-
 class ILESModelTests(TestCase):
     def setUp(self):
         self.student = User.objects.create_user(username="st1", password="Pass1234!", role="Student")
