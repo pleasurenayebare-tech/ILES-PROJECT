@@ -18,7 +18,6 @@ class RegisterView(generics.CreateAPIView):
     serializer_class = RegisterSerializer
     permission_classes = [permissions.AllowAny]
 
-
 class CurrentUserView(APIView):
     """
     API endpoint to retrieve the currently authenticated user's profile.
