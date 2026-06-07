@@ -2,7 +2,6 @@ from django.core.mail import send_mail
 
 from notifications.models import Notification
 
-
 def notify_user(user, title, message):
     """
     Send a notification to a user via two channels:
