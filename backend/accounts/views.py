@@ -33,7 +33,6 @@ class CurrentUserView(APIView):
         serializer = UserSerializer(request.user)
         return Response(serializer.data)
 
-
 class UpdateProfileView(generics.UpdateAPIView):
     """API endpoint to update the authenticated user's profile."""
     serializer_class = UserSerializer
