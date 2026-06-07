@@ -18,7 +18,6 @@ class InternshipPlacementAdmin(admin.ModelAdmin):
     # Order placements by most recent start date first
     ordering = ("-start_date",)
 
-
 @admin.register(WeeklyLog)
 class WeeklyLogAdmin(admin.ModelAdmin):
     """Admin configuration for the WeeklyLog model."""
