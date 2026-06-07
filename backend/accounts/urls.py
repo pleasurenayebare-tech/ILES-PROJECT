@@ -3,7 +3,6 @@ from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 
 from .views import CurrentUserView, RegisterView
 
-
 urlpatterns = [
     # Register a new user account
     path("register/", RegisterView.as_view(), name="register"),
