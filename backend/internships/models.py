@@ -5,7 +5,6 @@ from django.utils import timezone
 
 User = settings.AUTH_USER_MODEL
 
-
 class PlacementStatus(models.TextChoices):
     PENDING = "Pending", "Pending"
     ACTIVE = "Active", "Active"
