@@ -67,7 +67,6 @@ class ChangePasswordView(APIView):
         update_session_auth_hash(request, user)
         return Response({"message": "Password updated successfully."})
 
-
 class UserListView(generics.ListAPIView):
     """API endpoint to list all users. Admin only."""
     serializer_class = UserSerializer
