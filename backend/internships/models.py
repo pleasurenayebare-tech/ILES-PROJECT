@@ -47,7 +47,6 @@ class WeeklyLogState(models.TextChoices):
     APPROVED = "Approved", "Approved"
     REJECTED = "Rejected", "Rejected"
 
-
 class WeeklyLog(models.Model):
     placement = models.ForeignKey(InternshipPlacement, on_delete=models.CASCADE, related_name="weekly_logs")
     student = models.ForeignKey(User, on_delete=models.CASCADE, related_name="weekly_logs")
