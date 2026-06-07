@@ -41,7 +41,6 @@ class UpdateProfileView(generics.UpdateAPIView):
     def get_object(self):
         return self.request.user
 
-
 class ChangePasswordView(APIView):
     """API endpoint to change the authenticated user's password."""
     permission_classes = [permissions.IsAuthenticated]
