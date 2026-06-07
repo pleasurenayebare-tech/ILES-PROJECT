@@ -6,7 +6,6 @@ from .views import CurrentUserView, RegisterView
 urlpatterns = [
     path("register/", RegisterView.as_view(), name="register"),
 
-    
     path("login/", TokenObtainPairView.as_view(), name="login"),
 
     # Refresh an expired access token using a valid refresh token
