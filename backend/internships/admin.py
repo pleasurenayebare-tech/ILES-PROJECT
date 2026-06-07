@@ -36,7 +36,6 @@ class EvaluationCriteriaAdmin(admin.ModelAdmin):
     list_display = ("name", "max_score")
     search_fields = ("name",)
 
-
 @admin.register(Evaluation)
 class EvaluationAdmin(admin.ModelAdmin):
     """Admin configuraton for the Evaluation model."""
