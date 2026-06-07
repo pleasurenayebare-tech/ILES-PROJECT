@@ -11,7 +11,6 @@ class PlacementStatus(models.TextChoices):
     ACTIVE = "Active", "Active"
     COMPLETED = "Completed", "Completed"
 
-
 class InternshipPlacement(models.Model):
     student = models.OneToOneField(User, on_delete=models.CASCADE, related_name="placement")
     workplace_supervisor = models.ForeignKey(
