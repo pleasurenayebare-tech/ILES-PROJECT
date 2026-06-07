@@ -78,7 +78,6 @@ class UserListView(generics.ListAPIView):
             return User.objects.filter(role=role)
         return User.objects.all()
 
-
 class LogoutView(APIView):
     """API endpoint to log out by blacklisting the refresh token."""
     permission_classes = [permissions.IsAuthenticated]
