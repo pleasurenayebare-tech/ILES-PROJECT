@@ -129,7 +129,6 @@ class EvaluationCriteria(models.Model):
     def __str__(self):
         return f"{self.name} ({self.weight})"
 
-
 class Evaluation(models.Model):
     weekly_log = models.OneToOneField(WeeklyLog, on_delete=models.CASCADE, related_name="evaluation")
     evaluator = models.ForeignKey(User, on_delete=models.CASCADE, related_name="evaluations")
