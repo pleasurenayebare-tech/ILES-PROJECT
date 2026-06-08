@@ -22,7 +22,7 @@ class RegisterSerializer(serializers.ModelSerializer):
     password = serializers.CharField(write_only=True)
 
     class Meta:
-        model = User
+        model = Use
         fields = (
             "id", "username", "email", "first_name", "last_name",
             "password", "role", "student_number", "staff_number"
