@@ -13,7 +13,7 @@ class UserSerializer(serializers.ModelSerializer):
             "id", "username", "email", "first_name", "last_name",
             "role", "student_number", "staff_number", "phone_number", "department"
         )
-        read_only_fields = ("id", "role")
+        read_only_fields = ("id", "role"
 
 class RegisterSerializer(serializers.ModelSerializer):
     """Serializer for handling new user registration."""
