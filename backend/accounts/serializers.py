@@ -5,7 +5,7 @@ from django.contrib.auth import get_user_model
 User = get_user_model()
 
 class UserSerializer(serializers.ModelSerializer):
-    """Serializer for reading and updating user profile data."""
+    """Serializer for reading and updating user profile data.""
 
     class Meta:
         model = User
