@@ -25,14 +25,15 @@ class WeeklyLogAdmin(admin.ModelAdmin):
 @admin.register(EvaluationCriteria)
 class EvaluationCriteriaAdmin(admin.ModelAdmin):
     """Admin configuration for the EvaluationCriteria model."""
-    list_display = ("name",)
+    list_display = ("name", "weight", "is_active")
     search_fields = ("name",)
+    list_filter = ("is_active",)
 
 
 @admin.register(Evaluation)
 class EvaluationAdmin(admin.ModelAdmin):
     """Admin configuration for the Evaluation model."""
-    list_display = ("placement", "evaluator", "created_at")
-    search_fields = ("placement__company_name", "evaluator__username")
+    list_display = ("weekly_log", "evaluator", "final_score", "created_at")
+    search_fields = ("evaluator__username",)
     ordering = ("-created_at",)
-    readonly_fields = ("created_at",)
+    readonly_fields = ("created_at", "final_score")
