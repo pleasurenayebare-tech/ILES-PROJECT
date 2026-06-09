@@ -60,10 +60,11 @@ class RegisterSerializer(serializers.ModelSerializer):
 
         # Remove empty strings for unique fields to avoid constraint errors
         if not validated_data.get("student_number"):
-            validate_data.pop("student_number", None)
+            validated_data.pop("student_number", None)
         if not validated_data.get("staff_number"):
-            validate_data.pop("staff_number", None)
+            validated_data.pop("staff_number", None)
         if not validated_data.get("phone_number"):
+            validated_data.pop("phone_number", None)
         user = User(**validated_data)
         user.set_password(password)
         user.save()
