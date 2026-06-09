@@ -59,6 +59,7 @@ class RegisterSerializer(serializers.ModelSerializer):
         password = validated_data.pop("password")
 
         # Remove empty strings for unique fields to avoid constraint errors
+        if not validated_data.get("student_number"):
         user = User(**validated_data)
         user.set_password(password)
         user.save()
