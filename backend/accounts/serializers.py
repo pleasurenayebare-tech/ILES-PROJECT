@@ -15,7 +15,6 @@ class UserSerializer(serializers.ModelSerializer):
         )
         read_only_fields = ("id", "role")
 
-
 class RegisterSerializer(serializers.ModelSerializer):
     """Serializer for handling new user registration."""
 
