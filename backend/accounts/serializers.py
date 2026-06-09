@@ -4,6 +4,7 @@ from django.contrib.auth import get_user_model
 
 User = get_user_model()
 
+
 class UserSerializer(serializers.ModelSerializer):
     """Serializer for reading and updating user profile data."""
 
@@ -15,11 +16,11 @@ class UserSerializer(serializers.ModelSerializer):
         )
         read_only_fields = ("id", "role")
 
+
 class RegisterSerializer(serializers.ModelSerializer):
     """Serializer for handling new user registration."""
 
     password = serializers.CharField(write_only=True)
-    id = serializers.IntegerField(read_only=True)
 
     class Meta:
         model = User
@@ -44,25 +45,19 @@ class RegisterSerializer(serializers.ModelSerializer):
     def validate(self, attrs):
         """Cross-field validation to enforce role-specific required fields."""
         role = attrs.get("role")
-
         if role == "Student" and not attrs.get("student_number"):
             raise serializers.ValidationError({"student_number": "Required for students."})
-
         if role in ("WorkplaceSupervisor", "AcademicSupervisor") and not attrs.get("staff_number"):
             raise serializers.ValidationError({"staff_number": "Required for supervisors."})
-
         return attrs
 
     def create(self, validated_data):
-    """Create and return a new user with an encrypted password."""
-    password = validated_data.pop("password")
-    
-    # Remove empty strings for unique/nullable fields to avoid constraint errors
-    for field in ("student_number", "staff_number", "phone_number", "department"):
-        if not validated_data.get(field):
-            validated_data.pop(field, None)
-    
-    user = User(**validated_data)
-    user.set_password(password)
-    user.save()
-    return user
+        """Create and return a new user with an encrypted password."""
+        password = validated_data.pop("password")
+        for field in ("student_number", "staff_number", "phone_number", "department"):
+            if not validated_data.get(field):
+                validated_data.pop(field, None)
+        user = User(**validated_data)
+        user.set_password(password)
+        user.save()
+        return user
