@@ -57,7 +57,8 @@ class RegisterSerializer(serializers.ModelSerializer):
     def create(self, validated_data):
         """Create and return a new user with an encrypted password."""
         password = validated_data.pop("password")
-        
+
+        # Remove empty strings for unique fields to avoid constraint errors
         user = User(**validated_data)
         user.set_password(password)
         user.save()
