@@ -65,6 +65,7 @@ class RegisterSerializer(serializers.ModelSerializer):
             validated_data.pop("staff_number", None)
         if not validated_data.get("phone_number"):
             validated_data.pop("phone_number", None)
+            
         user = User(**validated_data)
         user.set_password(password)
         user.save()
