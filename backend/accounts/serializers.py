@@ -54,18 +54,15 @@ class RegisterSerializer(serializers.ModelSerializer):
         return attrs
 
     def create(self, validated_data):
-        """Create and return a new user with an encrypted password."""
-        password = validated_data.pop("password")
-
-        # Remove empty strings for unique fields to avoid constraint errors
-        if not validated_data.get("student_number"):
-            validated_data.pop("student_number", None)
-        if not validated_data.get("staff_number"):
-            validated_data.pop("staff_number", None)
-        if not validated_data.get("phone_number"):
-            validated_data.pop("phone_number", None)
-            
-        user = User(**validated_data)
-        user.set_password(password)
-        user.save()
-        return user
+    """Create and return a new user with an encrypted password."""
+    password = validated_data.pop("password")
+    
+    # Remove empty strings for unique/nullable fields to avoid constraint errors
+    for field in ("student_number", "staff_number", "phone_number", "department"):
+        if not validated_data.get(field):
+            validated_data.pop(field, None)
+    
+    user = User(**validated_data)
+    user.set_password(password)
+    user.save()
+    return user
