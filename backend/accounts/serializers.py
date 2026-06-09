@@ -54,9 +54,11 @@ class RegisterSerializer(serializers.ModelSerializer):
     def create(self, validated_data):
         """Create and return a new user with an encrypted password."""
         password = validated_data.pop("password")
-        for field in ("student_number", "staff_number", "phone_number", "department"):
+        for field in ("student_number", "staff_number", "phone_number"):
             if not validated_data.get(field):
                 validated_data.pop(field, None)
+        if not validated_data.get("department"):
+            validated_data["department"] = ""
         user = User(**validated_data)
         user.set_password(password)
         user.save()
