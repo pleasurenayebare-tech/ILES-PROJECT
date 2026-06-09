@@ -19,7 +19,7 @@ class RegisterSerializer(serializers.ModelSerializer):
     """Serializer for handling new user registration."""
 
     password = serializers.CharField(write_only=True)
-id = serializers.IntegerField(read_only=True)
+    id = serializers.IntegerField(read_only=True)
 
     class Meta:
         model = User
