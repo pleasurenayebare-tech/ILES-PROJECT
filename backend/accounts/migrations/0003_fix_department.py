@@ -4,7 +4,7 @@ from django.db import migrations
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('accounts', '0002_fix_phone_number'),
+        ('accounts', '0001_initial'),
     ]
 
     operations = [
