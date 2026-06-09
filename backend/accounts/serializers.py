@@ -4,28 +4,30 @@ from django.contrib.auth import get_user_model
 
 User = get_user_model()
 
+
 class UserSerializer(serializers.ModelSerializer):
     """Serializer for reading and updating user profile data."""
 
     class Meta:
-        model = User(
-        fields =
+        model = User
+        fields = (
             "id", "username", "email", "first_name", "last_name",
             "role", "student_number", "staff_number", "phone_number", "department"
         )
         read_only_fields = ("id", "role")
 
+
 class RegisterSerializer(serializers.ModelSerializer):
     """Serializer for handling new user registration."""
 
-    # Password is write-only so it is never returned in API responses
     password = serializers.CharField(write_only=True)
 
     class Meta:
         model = User
         fields = (
             "id", "username", "email", "first_name", "last_name",
-            "password", "role", "student_number", "staff_number"
+            "password", "role", "student_number", "staff_number",
+            "phone_number", "department"
         )
         read_only_fields = ("id",)
 
@@ -43,11 +45,10 @@ class RegisterSerializer(serializers.ModelSerializer):
     def validate(self, attrs):
         """Cross-field validation to enforce role-specific required fields."""
         role = attrs.get("role")
-        # Students must provide a student number
+
         if role == "Student" and not attrs.get("student_number"):
             raise serializers.ValidationError({"student_number": "Required for students."})
 
-        # Workplace and Academic Supervisors must provide a staff number
         if role in ("WorkplaceSupervisor", "AcademicSupervisor") and not attrs.get("staff_number"):
             raise serializers.ValidationError({"staff_number": "Required for supervisors."})
 
