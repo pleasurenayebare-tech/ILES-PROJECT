@@ -11,6 +11,7 @@ from .views import CurrentUserView, RegisterView
 # All routes are prefixed with /api/auth/ as defined in the main config/urls.py
 
 urlpatterns = [
+    # POST /api/auth/register/
     path("register/", RegisterView.as_view(), name="register"),
     path("login/", TokenObtainPairView.as_view(), name="login"),
     path("token/refresh/", TokenRefreshView.as_view(), name="token_refresh"),
