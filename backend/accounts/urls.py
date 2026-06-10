@@ -16,6 +16,7 @@ from .views import CurrentUserView, RegisterView
 # All routes are prefixed with /api/auth/ as defined in the main config/urls.py
 
 urlpatterns = [
+    
     # POST /api/auth/register/
     # Accepts new user registration data and creates an account
     # No authentication required — open to all users
