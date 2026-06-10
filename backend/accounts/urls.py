@@ -1,7 +1,4 @@
 from django.urls import path
-
-
-
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 # Custom views defined in this app's views.py
 # CurrentUserView: returns the profile of the currently logged-in user
