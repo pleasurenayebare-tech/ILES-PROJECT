@@ -24,5 +24,6 @@ urlpatterns = [
     # Used to keep the user logged in without re-entering credentials
     path("token/refresh/", TokenRefreshView.as_view(), name="token_refresh"),
     # GET /api/auth/me/
+    # Returns the profile data of the currently authenticated user
     path("me/", CurrentUserView.as_view(), name="me"),
 ]
