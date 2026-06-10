@@ -12,7 +12,7 @@ class AccountsModelTest(TestCase):
             username="teststudent",
             email="student@test.com",
             password="Test1234!",
-            role="Student"
+            role="Student
         )
 
     def test_user_created_successfully(self):
