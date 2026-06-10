@@ -3,7 +3,6 @@ from django.urls import path
 # TokenObtainPairView: handles login and returns access + refresh tokens
 # TokenRefreshView: handles refreshing an expired access token
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
-
 # Custom views defined in this app's views.py
 # CurrentUserView: returns the profile of the currently logged-in user
 # RegisterView: handles new user account registration
