@@ -1,5 +1,4 @@
 from django.urls import path
-
 # JWT authentication views from SimpleJWT library
 # TokenObtainPairView: handles login and returns access + refresh tokens
 # TokenRefreshView: handles refreshing an expired access token
