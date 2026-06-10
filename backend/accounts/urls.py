@@ -22,7 +22,6 @@ urlpatterns = [
     # POST /api/auth/token/refresh/
     # Accepts a valid refresh token and returns a new access token
     # Used to keep the user logged in without re-entering credentials
-    
     path("token/refresh/", TokenRefreshView.as_view(), name="token_refresh"),
     
     # GET /api/auth/me/
