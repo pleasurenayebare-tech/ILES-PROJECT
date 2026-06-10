@@ -11,7 +11,7 @@ class AccountsModelTest(TestCase):
         self.student = User.objects.create_user(
             username="teststudent",
             email="student@test.com",
-            password="Test1234!"
+            password="Test1234!",
             role="Student"
         )
 
