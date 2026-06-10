@@ -13,7 +13,7 @@ class AccountsModelTest(TestCase):
             email="student@test.com",
             password="Test1234!",
             role="Student"
-        )
+        
 
     def test_user_created_successfully(self):
         """Test that a user is created with the correct username."""
