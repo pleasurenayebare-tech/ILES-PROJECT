@@ -19,7 +19,7 @@ class AccountsModelTest(TestCase):
         """Test that a user is created with the correct username."""
         self.assertEqual(self.student.username, "teststudent")
 
-    def test_user_email(self)
+    def test_user_email(self):
         """Test that the user email is saved correctly."""
         self.assertEqual(self.student.email, "student@test.com")
 
