@@ -1,6 +1,5 @@
 from django.urls import path
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
-
 # RegisterView: handles new user account registration
 from .views import CurrentUserView, RegisterView
 # URL patterns for the accounts app
