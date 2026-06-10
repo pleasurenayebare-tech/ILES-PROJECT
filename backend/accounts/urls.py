@@ -15,6 +15,7 @@ urlpatterns = [
     # Accepts new user registration data and creates an account
     # No authentication required — open to all users
     path("register/", RegisterView.as_view(), name="register"),
+    # POST /api/auth/login/
     path("login/", TokenObtainPairView.as_view(), name="login"),
     path("token/refresh/", TokenRefreshView.as_view(), name="token_refresh"),
     path("me/", CurrentUserView.as_view(), name="me"),
