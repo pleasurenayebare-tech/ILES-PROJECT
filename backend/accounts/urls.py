@@ -25,5 +25,6 @@ urlpatterns = [
     path("token/refresh/", TokenRefreshView.as_view(), name="token_refresh"),
     # GET /api/auth/me/
     # Returns the profile data of the currently authenticated user
+    # Requires a valid JWT access token in the Authorization header
     path("me/", CurrentUserView.as_view(), name="me"),
 ]
