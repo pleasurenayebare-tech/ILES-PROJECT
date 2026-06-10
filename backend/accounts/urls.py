@@ -1,4 +1,5 @@
 from django.urls import path
+# JWT authentication views from SimpleJWT library
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 from .views import CurrentUserView, RegisterView
 
