@@ -5,7 +5,7 @@ from .views import CurrentUserView, RegisterView
 urlpatterns = [
     path("register/", RegisterView.as_view(), name="register"),
     
-    # Accepts username and password, returns JWT access and refresh tokens
+    
     # No authentication required — open to all users
     path("login/", TokenObtainPairView.as_view(), name="login"), 
     # POST /api/auth/token/refresh/
