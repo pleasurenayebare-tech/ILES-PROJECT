@@ -11,6 +11,7 @@ from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 # RegisterView: handles new user account registration
 
 from .views import CurrentUserView, RegisterView
+
 # URL patterns for the accounts app
 # All routes are prefixed with /api/auth/ as defined in the main config/urls.py
 
