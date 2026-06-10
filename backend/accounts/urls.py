@@ -2,8 +2,6 @@ from django.urls import path
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 from .views import CurrentUserView, RegisterView
 
-
-
 urlpatterns = [
     # POST /api/auth/register/
     # Accepts new user registration data and creates an account
