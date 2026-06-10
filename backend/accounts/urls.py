@@ -20,6 +20,7 @@ urlpatterns = [
     # No authentication required — open to all users
     path("login/", TokenObtainPairView.as_view(), name="login"),
     # POST /api/auth/token/refresh/
+    # Accepts a valid refresh token and returns a new access token
     path("token/refresh/", TokenRefreshView.as_view(), name="token_refresh"),
     path("me/", CurrentUserView.as_view(), name="me"),
 ]
