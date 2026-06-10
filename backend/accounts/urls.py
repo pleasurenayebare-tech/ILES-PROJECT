@@ -13,6 +13,7 @@ from .views import CurrentUserView, RegisterView
 urlpatterns = [
     # POST /api/auth/register/
     # Accepts new user registration data and creates an account
+    # No authentication required — open to all users
     path("register/", RegisterView.as_view(), name="register"),
     path("login/", TokenObtainPairView.as_view(), name="login"),
     path("token/refresh/", TokenRefreshView.as_view(), name="token_refresh"),
