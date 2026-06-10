@@ -1,6 +1,6 @@
 from django.urls import path
 
-# TokenObtainPairView: handles login and returns access + refresh tokens
+
 # TokenRefreshView: handles refreshing an expired access token
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 # Custom views defined in this app's views.py
