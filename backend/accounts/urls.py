@@ -20,6 +20,7 @@ urlpatterns = [
     # POST /api/auth/register/
     # Accepts new user registration data and creates an account
     # No authentication required — open to all users
+    
     path("register/", RegisterView.as_view(), name="register"),
     # POST /api/auth/login/
     # Accepts username and password, returns JWT access and refresh tokens
