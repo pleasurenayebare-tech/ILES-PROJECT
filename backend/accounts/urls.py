@@ -7,6 +7,7 @@ from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 # CurrentUserView: returns the profile of the currently logged-in user
 # RegisterView: handles new user account registration
 from .views import CurrentUserView, RegisterView
+# URL patterns for the accounts app
 
 urlpatterns = [
     path("register/", RegisterView.as_view(), name="register"),
