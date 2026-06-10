@@ -19,6 +19,7 @@ urlpatterns = [
     # Accepts username and password, returns JWT access and refresh tokens
     # No authentication required — open to all users
     path("login/", TokenObtainPairView.as_view(), name="login"),
+    # POST /api/auth/token/refresh/
     path("token/refresh/", TokenRefreshView.as_view(), name="token_refresh"),
     path("me/", CurrentUserView.as_view(), name="me"),
 ]
