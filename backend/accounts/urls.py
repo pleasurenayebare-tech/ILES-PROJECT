@@ -3,7 +3,6 @@ from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 from .views import CurrentUserView, RegisterView
 
 urlpatterns = [
-    
     path("register/", RegisterView.as_view(), name="register"),
     # POST /api/auth/login/
     # Accepts username and password, returns JWT access and refresh tokens
