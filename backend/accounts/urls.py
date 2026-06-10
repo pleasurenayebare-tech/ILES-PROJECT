@@ -2,7 +2,7 @@ from django.urls import path
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 from .views import CurrentUserView, RegisterView
 
-# All routes are prefixed with /api/auth/ as defined in the main config/urls.py
+
 
 urlpatterns = [
     # POST /api/auth/register/
