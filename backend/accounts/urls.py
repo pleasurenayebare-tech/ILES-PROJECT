@@ -6,7 +6,6 @@ from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 # Custom views defined in this app's views.py
 # CurrentUserView: returns the profile of the currently logged-in user
 # RegisterView: handles new user account registration
-
 from .views import CurrentUserView, RegisterView
 
 # URL patterns for the accounts app
