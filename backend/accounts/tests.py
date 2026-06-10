@@ -9,7 +9,7 @@ class AccountsModelTest(TestCase):
     def setUp(self):
         """Set up test data before each test runs."""
         self.student = User.objects.create_user(
-            username="teststudent"
+            username="teststudent",
             email="student@test.com",
             password="Test1234!",
             role="Student"
