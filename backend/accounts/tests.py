@@ -27,7 +27,7 @@ class AccountsModelTest(TestCase):
         """Test that user role is set to Student."""
         self.assertEqual(self.student.role, "Student")
 
-    def test_user_is_active_by_default(self):
+    def test_user_is_active_by_default(self)
         """Test that a newly created user is active."""
         self.assertTrue(self.student.is_active)
 
